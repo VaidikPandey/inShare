@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>inShare - Easy File Sharing</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div class="container">
-			<header>
-				<h1>inShare</h1>
-				<p>easy file sharing</p>
-			</header>
-			<main>
-				<div class="upload-area">
-					<img src="assets/cloud.png" class="upload-icon" />
-					<p>
-						Drop your Files here or, <span class="browse-link">browse</span>
-					</p>
-				</div>
-				<p class="expiry-notice">Link expires in 24 hrs</p>
-				<div class="share-link">
-					<input type="text" value= >
-					<button class="copy-btn">Copy</button>
-				</div>
-				<div class="email-share">
-					<h2>Or Send via Email</h2>
-					<form>
-						<input type="email" placeholder="Your email" required />
-						<input type="email" placeholder="Receiver's email" required />
-						<button type="submit">Send</button>
-					</form>
-				</div>
-			</main>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inShare - Easy file sharing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="upload-container">
+      <div class="drop-zone">
+        <div class="icon-container">
+          <img
+            src="assests/file.svg"
+            alt="file icon"
+            class="center"
+            draggable="false"
+          />
+          <img
+            src="assests/file.svg"
+            alt="file icon"
+            class="left"
+            draggable="false"
+          />
+          <img
+            src="assests/file.svg"
+            alt="file icon"
+            class="right"
+            draggable="false"
+          />
+        </div>
+        <input type="file" id="fileInput" />
+        <div class="title">
+          Drop your Files here or, <span class="browseBtn">browse</span>
+        </div>
+      </div>
+      <div class="progress-container">
+        <div class="bg-progress"></div>
+        <div class="inner-container">
+          <div class="title">Uploading...</div>
+          <div class="percent-container"><span id="percent">0</span>%</div>
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
