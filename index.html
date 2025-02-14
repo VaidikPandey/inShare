@@ -4,19 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>inShare - Easy file sharing</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section class="upload-container">
       <div class="drop-zone">
         <div class="icon-container">
-            <img src="file.svg" alt="file icon" class="center" draggable="false">
-            <img src="file.svg" alt="file icon" class="left" draggable="false">
-            <img src="file.svg" alt="file icon" class="right" draggable="false">
+          <img
+            src="assests/file.svg"
+            alt="file icon"
+            class="center"
+            draggable="false"
+          />
+          <img
+            src="assests/file.svg"
+            alt="file icon"
+            class="left"
+            draggable="false"
+          />
+          <img
+            src="assests/file.svg"
+            alt="file icon"
+            class="right"
+            draggable="false"
+          />
         </div>
-        <input type="file" id="fileInput">
-        <div class="title">Drop your Files here or, <span class="browseBtn">browse</span></div>
+        <input type="file" id="fileInput" />
+        <div class="title">
+          Drop your Files here or, <span class="browseBtn">browse</span>
+        </div>
       </div>
       <div class="progress-container">
         <div class="bg-progress"></div>
@@ -27,28 +43,29 @@
         </div>
       </div>
       <div class="sharing-container">
-        <p class = "expire"> Link expires in 24 hrs</p>
+        <p class="expire">Link expires in 24 hrs</p>
         <div class="input-container">
-          <input type = "text" id = "fileURL" readonly>
-          <img src="copy-icon.svg" alt="copy icon" id="copyBtn">
+          <input type="text" id="fileURL" readonly />
+          <img src="assests/copy-icon.svg" alt="copy icon" id="copyBtn" />
         </div>
-        <p>Or Send Via Email</p>
+        <p>Or send via Email</p>
         <div class="email-container">
           <form id="emailForm">
             <div class="field">
-              <label for="sender"> Your email</label>
-              <input type="email" required name="from-email" id="sender">
-             </div>
-             <div class="field">
-              <label for="receiver"> Receiver's email</label>
-              <input type="email" required name="to-email" id="receiver">
-             </div>
-             <button type="submit">Send</button>
+              <label for="sender">Your Email</label>
+              <input type="email" required name="from-email" id="sender" />
+            </div>
+            <div class="field">
+              <label for="receiver">Receiver's Email</label>
+              <input type="email" required name="to-email" id="receiver" />
+            </div>
+            <button type="submit">Send</button>
           </form>
         </div>
       </div>
     </section>
+    <div class="bg"></div>
+    <div class="alert">Hello</div>
     <script src="script.js"></script>
-
   </body>
 </html>
