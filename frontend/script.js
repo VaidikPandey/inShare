@@ -44,7 +44,7 @@ dropZone.addEventListener("drop",(e)=>{
 
 fileInput.addEventListener("change", ()=>{
     uploadFile();
-})
+});
 
 browseBtn.addEventListener("click", ()=>{
     fileInput.click()
@@ -77,7 +77,7 @@ const uploadFile=()=>{
 const updateProgress=(e)=>{
     const percent=Math.round((e.loaded / e.total)*100);
     // console.log(percent);
-    bgProgress.style.width= ${percent}%; // syntax error
+    bgProgress.style.width= ${percent}; // syntax error
     percentDiv.innerText=percent;
     progressBar.style.transform=scaleX(${percent/100});
 };
@@ -118,4 +118,3 @@ emailForm.addEventListener("submit", (e)=>{
 
             }
     });
-}w);
