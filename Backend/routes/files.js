@@ -24,7 +24,7 @@ router.post('/', (req, res) => {
       uuid: uuidv4(),
       path: req.file.path,
       size: req.file.size,
-      expiresAt: new Date(Date.now() + 24 * 60 * 60 * 1000) // 24 hours from now
+      expiresAt: new Date(Date.now() + 24 * 60 * 60 * 1000)
     });
     const response = await file.save();
     res.json({ file: `${process.env.APP_BASE_URL}/files/${response.uuid}` });
