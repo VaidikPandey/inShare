@@ -13,9 +13,9 @@ const copyBtn = document.querySelector("#copyBtn");
 
 const emailForm = document.querySelector("#emailForm");
 
-const host = "http://localhost:3000";
+const host = "https://inshare-backend-sdxe.onrender.com";
 const uploadURL = `${host}/api/files`;
-const emailURL = `${host}/api/files/send`;
+const emailURL = `${host}api/files/send`;
 
 // Drag events
 dropZone.addEventListener("dragover", (e) => {
