@@ -5,8 +5,8 @@ async function sendMail({ from, to, subject, text, html }) {
     port: process.env.SMTP_PORT,
     secure: false,
     auth: {
-      user: process.env.MAIL_USER, // generated user
-      pass: process.env.MAIL_PASSWORD, // generated password
+      user: process.env.MAIL_USER,
+      pass: process.env.MAIL_PASSWORD,
     },
   });
 

@@ -4,7 +4,7 @@ const path = require('path');
 const cron = require('./services/cronService');
 const cors = require('cors');
 const request = require('request');
-const PORT =  3000;
+const PORT = 3000;
 app.use(express.json());
 app.use(express.static('public'));
 
@@ -13,11 +13,15 @@ const connectDB = require('./config/db');
 connectDB();
 
 // cors
-app.use(cors());
+const corsOptions = {
+  origin: process.env.ALLOWED_CLIENTS.split(',')
+}
+
+app.use(cors(corsOptions));
 
 app.get('/api/files', (req, res) => {
   request(
-    { url: 'https://innshare.herokuapp.com/api/files' },
+    { url: 'http://localhost:3000/api/files' },
     (error, response, body) => {
       res.send(body);
     }
