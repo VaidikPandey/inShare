@@ -15,9 +15,16 @@ const emailForm = document.querySelector("#emailForm");
 
 const toast = document.querySelector(".toast");
 
+<<<<<<< HEAD
 const baseURL = "https://inshare-backend-sdxe.onrender.com";
 const uploadURL = `${baseURL}/api/files`;
 const emailURL = `${baseURL}/api/files/send`;
+=======
+// const baseURL = "";
+const host = "https://inshare-backend-sdxe.onrender.com";
+const uploadURL = `${host}/api/files`;
+const emailURL = `${host}/api/files/send`;
+>>>>>>> f86dcab813edc5a9534eaefac14732ce6d26af04
 
 const maxAllowedSize = 100 * 1024 * 1024; //100mb
 
