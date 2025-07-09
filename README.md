@@ -5,16 +5,16 @@
 
 ## 🧠 What is inShare?
 
-inShare is a simple, intuitive web-based file sharing application. Users can quickly upload files, generate a unique link, and share it—no login required. Think of it as your own version of WeTransfer, fully built and deployed by me from scratch.
+inShare is a simple, intuitive web-based file sharing application. Users can quickly upload files, generate a unique link, and share it—no login required. Think of it as your own version of WeTransfer, backend fully built and deployed by me from scratch.
 
 ---
 
 ## ✨ Key Features
 
-✅ **Drag & Drop Uploads** – Smooth and modern interface
-🔗 **Shareable Links** – Instantly get a link to share with others
-📧 **Email Integration** – Send file links directly via email
-⏳ **File Expiration** – Auto-delete files after a set time for better privacy
+✅ **Drag & Drop Uploads** – Smooth and modern interface  
+🔗 **Shareable Links** – Instantly get a link to share with others  
+📧 **Email Integration** – Send file links directly via email  
+⏳ **File Expiration** – Auto-delete files after a set time  
 📱 **Mobile-Friendly** – Works on phones and tablets too
 
 ---
@@ -25,7 +25,7 @@ inShare is a simple, intuitive web-based file sharing application. Users can qui
 
 * HTML
 * CSS
-* JavaScript (Vanilla + XHR)
+* JavaScript
 
 **Backend:**
 
