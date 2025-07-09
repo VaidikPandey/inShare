@@ -53,5 +53,3 @@ Every bit of backend logic, routing, environment config, and deployment was hand
 > [https://github.com/VaidikPandey/inShare-Backend](https://github.com/VaidikPandey/inShare-Backend)
 
 ---
-
-Let me know if you want to add screenshots or setup instructions next.
