@@ -1,8 +1,6 @@
 # ⚡ inShare – File Sharing Web App
 
 🔗 **Live Demo:** [https://in-share-frontend.vercel.app](https://in-share-frontend.vercel.app)
-📦 **Backend Repo:** [https://github.com/VaidikPandey/inShare-Backend](https://github.com/VaidikPandey/inShare-Backend)
-
 ---
 
 ## 🧠 What is inShare?
@@ -46,7 +44,7 @@ inShare is a simple, intuitive web-based file sharing application. Users can qui
 * **Backend** deployed using **Render**
 * **Database** managed with **MongoDB Atlas**
 
-Every bit of backend logic, routing, environment config, and deployment was handled by me.
+Every bit of backend logic, routing, environment config, and deployment was handled by Vaidik Pandey.
 
 ---
 
