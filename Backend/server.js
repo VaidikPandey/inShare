@@ -13,7 +13,7 @@ connectDB();
 // Allow only your deployed frontend
 app.use(
   cors({
-    origin: "https://in-share-frontend.vercel.app","http://127.0.0.1:8080",
+    origin: "https://in-share-frontend.vercel.app",
     methods: ["GET", "POST"],
     credentials: true,
   }),
