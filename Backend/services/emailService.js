@@ -3,8 +3,8 @@ const nodemailer = require("nodemailer");
 module.exports = async ({ from, to, subject, text, html }) => {
   try {
     // Brevo (Sendinblue) SMTP configuration
-    let transporter = nodemailer.createTransporter({
-      host: process.env.SMTP_HOST || 'smtp-relay.brevo.com',
+    let transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST || "smtp-relay.brevo.com",
       port: process.env.SMTP_PORT || 587,
       secure: false, // true for 465, false for other ports
       auth: {
@@ -21,11 +21,11 @@ module.exports = async ({ from, to, subject, text, html }) => {
       text: text, // plain text body
       html: html, // html body
     });
-    
-    console.log('Email sent successfully:', info.messageId);
+
+    console.log("Email sent successfully:", info.messageId);
     return info;
   } catch (error) {
-    console.error('Email sending failed:', error);
+    console.error("Email sending failed:", error);
     throw error;
   }
 };
