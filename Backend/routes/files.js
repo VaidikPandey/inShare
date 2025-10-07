@@ -49,7 +49,7 @@ router.post("/send", async (req, res) => {
     file.receiver = emailTo;
     const response = await file.save();
     // send mail
-    const sendMail = require("../services/mailService");
+    const sendMail = require("../services/emailService");
     sendMail({
       from: emailFrom,
       to: emailTo,
