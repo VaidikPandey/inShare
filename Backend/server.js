@@ -16,7 +16,6 @@ app.use(
     origin: [
       "https://in-share-frontend.vercel.app",
       "https://in-share-frontend-h6omgkw4s-vaidikpandeys-projects.vercel.app",
-      /^https:\/\/in-share-frontend.*\.vercel\.app$/
     ],
     methods: ["GET", "POST"],
     credentials: true,
